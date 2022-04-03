@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <h1>New Message</h1>
+    <form method="POST" action="/new">
+        <label for="text">Comment</label>
+        <textarea name="text" required placeholder="comment" rows="4" cols="50"></textarea>
+        <br>
+        <br>
+        <label for="user">User</label>
+        <input type="text" name="user" required placeholder="John Smith">
+        <br>
+        <br>
+        <button>Submit</button>
+    </form>
+  </body>
+</html>
